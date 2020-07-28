@@ -145,11 +145,15 @@ class CountryCodePickerState extends State<CountryCodePicker> {
                   padding: widget.alignLeft
                       ? const EdgeInsets.only(right: 16.0, left: 8.0)
                       : const EdgeInsets.only(right: 16.0),
+                  child: ClipOval(
                   child: Image.asset(
                     selectedItem.flagUri,
                     package: 'country_code_picker',
-                    width: widget.flagWidth,
+                    height: 30,
+                    width: 30,
+                    fit: BoxFit.cover,
                   ),
+                ),
                 ),
               ),
             if (!widget.hideMainText)
