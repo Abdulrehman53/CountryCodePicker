@@ -32,7 +32,7 @@ class SelectionDialog extends StatefulWidget {
     this.hideSearch = false,
   })  : assert(searchDecoration != null, 'searchDecoration must not be null!'),
         this.searchDecoration =
-            searchDecoration.copyWith(prefixIcon: Icon(Icons.search)),
+            searchDecoration.copyWith(prefixIcon: Icon(Icons.search,color: Colors.white,)),
         super(key: key);
 
   @override
