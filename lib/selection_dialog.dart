@@ -76,7 +76,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
                 widget.size?.height ?? MediaQuery.of(context).size.height * 0.7,
             child: ListView(
               children: [
-                widget.favoriteElements.isEmpty
+                /* widget.favoriteElements.isEmpty
                     ? const DecoratedBox(decoration: BoxDecoration())
                     : Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -91,7 +91,7 @@ class _SelectionDialogState extends State<SelectionDialog> {
                           ),
                           const Divider(),
                         ],
-                      ),
+                      ), */
                 if (filteredElements.isEmpty)
                   _buildEmptySearchWidget(context)
                 else
